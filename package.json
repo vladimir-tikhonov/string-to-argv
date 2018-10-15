@@ -1,0 +1,24 @@
+{
+  "name": "string-to-argv",
+  "version": "0.1.0",
+  "description": "string-to-argv is a tool to parse command line string into an argument array to mimic `process.argv`",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimir-tikhonov/string-to-argv.git"
+  },
+  "keywords": [
+    "argv",
+    "process.argv",
+    "parse"
+  ],
+  "author": "Vladimir Tikhonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimir-tikhonov/string-to-argv/issues"
+  },
+  "homepage": "https://github.com/vladimir-tikhonov/string-to-argv#readme"
+}
