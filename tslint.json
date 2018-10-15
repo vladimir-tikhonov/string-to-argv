@@ -83,7 +83,7 @@
       ],
       "triple-equals": true,
       "quotemark": [true, "single"],
-      "ter-indent": [true, 4],
+      "ter-indent": [true, 4, { "SwitchCase": 1 }],
       "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
       "whitespace": [true, "check-branch", "check-operator", "check-typecast", "check-decl", "check-separator"]
     }
