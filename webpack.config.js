@@ -20,6 +20,8 @@ const output = () => ({
     output: {
         path: DIST_PATH,
         libraryTarget: 'umd',
+        // https://github.com/webpack/webpack/issues/6522
+        globalObject: 'typeof self !== \'undefined\' ? self : this',
     },
 });
 
