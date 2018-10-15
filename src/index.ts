@@ -1,3 +1,5 @@
+import { StateMachine } from 'src/state_machine';
+
 /**
  * Parses a command line string into an argument array
  *
@@ -5,7 +7,23 @@
  * @returns {string[]} array of arguments
  */
 export default function parseArgvString(arvgString: string): string[] {
-    return arvgString.split(' ');
+    const stateMachine = new StateMachine();
+    const output: string[] = [];
+    let currentOutputIndex = 0;
+
+    for (const character of arvgString) {
+        const outputCharacter = stateMachine.handleCharacter(character);
+
+        if (outputCharacter) {
+            output[currentOutputIndex] = output[currentOutputIndex]
+                ? output[currentOutputIndex] + character
+                : character;
+        } else if (output[currentOutputIndex]) {
+            currentOutputIndex++;
+        }
+    }
+
+    return output;
 }
 
 // Allows commonjs and es6 imports at the same time.
