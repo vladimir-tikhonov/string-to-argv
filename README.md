@@ -1,4 +1,9 @@
-[![npm][npm_badge]][npm_url] [![Build Status][build_status_badge]][build_status_url] [![Coverage Status][coverage_badge]][coverage_url] [![dependencies Status][deps_badge]][deps_url] [![devDependencies Status][dev_deps_badge]][dev_deps_url] ![GitHub license][license_badge]
+[![npm][npm_badge]][npm_url]
+[![Build Status][build_status_badge]][build_status_url]
+[![Coverage Status][coverage_badge]][coverage_url]
+[![dependencies Status][deps_badge]][deps_url]
+[![devDependencies Status][dev_deps_badge]][dev_deps_url]
+![GitHub license][license_badge]
 
 # What is it?
 `string-to-argv` parses a command line string into an argument array to mimic `process.argv`.

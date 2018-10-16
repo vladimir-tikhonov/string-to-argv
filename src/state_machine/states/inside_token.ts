@@ -10,6 +10,12 @@ const insiteTokenState: State = {
     onWhitespace() {
         return [null, StateHandle.Empty];
     },
+    onSingleQuote() {
+        return ['', StateHandle.InsideSingleQuotedToken];
+    },
+    onDoubleQuote() {
+        return ['', StateHandle.InsideDoubleQuotedToken];
+    },
 };
 
 export default insiteTokenState;

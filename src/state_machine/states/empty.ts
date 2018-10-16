@@ -7,6 +7,12 @@ const emptyState: State = {
     onCharacter(character: string) {
         return [character, StateHandle.InsideToken];
     },
+    onSingleQuote() {
+        return [null, StateHandle.InsideSingleQuotedToken];
+    },
+    onDoubleQuote() {
+        return [null, StateHandle.InsideDoubleQuotedToken];
+    },
 };
 
 export default emptyState;

@@ -12,6 +12,8 @@ export interface State {
 export enum StateHandle {
     Empty,
     InsideToken,
+    InsideSingleQuotedToken,
+    InsideDoubleQuotedToken,
 }
 
 const defaultHandler: HandlerFunction = (_character: string) => [null, null];
