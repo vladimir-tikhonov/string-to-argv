@@ -13,6 +13,9 @@ const emptyState: State = {
     onDoubleQuote() {
         return [null, StateHandle.InsideDoubleQuotedToken];
     },
+    onEscape() {
+        return [null, StateHandle.AfterEscapeInsideToken];
+    },
 };
 
 export default emptyState;

@@ -23,6 +23,8 @@ export default class StateMachine {
                 return currentState.onSingleQuote(character);
             case `"`:
                 return currentState.onDoubleQuote(character);
+            case `\\`:
+                return currentState.onEscape(character);
             default:
                 return currentState.onCharacter(character);
         }

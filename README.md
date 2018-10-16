@@ -25,7 +25,7 @@ import parseArgvString from 'string-to-argv';
 // Node.js
 // const parseArgvString = require('string-to-argv');
 
-const argv = parseArgvString(`curl "https://example.com" -X POST --data "{ \"projectId\": 1, \"locale\": \"en\" }" --cookie "USER_NAME=O'Connor"`);
+const argv = parseArgvString(`curl "https://example.com" -X POST --data "{ \\"projectId\\": 1, \\"locale\\": \\"en\\" }" --cookie "USER_NAME=O'Connor"`);
 
 console.log(argv);
 /*
