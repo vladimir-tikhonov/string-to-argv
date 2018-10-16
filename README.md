@@ -1,4 +1,5 @@
 [![npm][npm_badge]][npm_url]
+![npm bundle size (minified)][bundle_size_badge]
 [![Build Status][build_status_badge]][build_status_url]
 [![Coverage Status][coverage_badge]][coverage_url]
 [![dependencies Status][deps_badge]][deps_url]
@@ -44,6 +45,8 @@ console.log(argv);
 
 [npm_badge]: https://img.shields.io/npm/v/string-to-argv.svg
 [npm_url]: https://npmjs.com/package/string-to-argv
+
+[bundle_size_badge]: https://img.shields.io/bundlephobia/min/string-to-argv.svg
 
 [build_status_badge]: https://travis-ci.org/vladimir-tikhonov/string-to-argv.svg?branch=master
 [build_status_url]: https://travis-ci.org/vladimir-tikhonov/string-to-argv
