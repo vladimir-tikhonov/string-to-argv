@@ -1,6 +1,6 @@
 {
   "name": "string-to-argv",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "string-to-argv is a tool to parse command line string into an argument array to mimic `process.argv`",
   "main": "dist/index.js",
   "scripts": {
