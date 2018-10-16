@@ -6,7 +6,7 @@ export default class StateMachine {
     public handleCharacter(character: string) {
         const [outputCharacter, nextStateHandle] = this.performTransition(character);
 
-        if (nextStateHandle) {
+        if (nextStateHandle !== null) {
             this.currentState = getStateByHandle(nextStateHandle);
         }
 
@@ -17,8 +17,12 @@ export default class StateMachine {
         const currentState = this.currentState;
 
         switch (character) {
-            case ' ':
+            case ` `:
                 return currentState.onWhitespace(character);
+            case `'`:
+                return currentState.onSingleQuote(character);
+            case `"`:
+                return currentState.onDoubleQuote(character);
             default:
                 return currentState.onCharacter(character);
         }

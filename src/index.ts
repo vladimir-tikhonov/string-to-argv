@@ -14,10 +14,10 @@ export default function parseArgvString(arvgString: string): string[] {
     for (const character of arvgString) {
         const outputCharacter = stateMachine.handleCharacter(character);
 
-        if (outputCharacter) {
+        if (outputCharacter !== null) {
             output[currentOutputIndex] = output[currentOutputIndex]
-                ? output[currentOutputIndex] + character
-                : character;
+                ? output[currentOutputIndex] + outputCharacter
+                : outputCharacter;
         } else if (output[currentOutputIndex]) {
             currentOutputIndex++;
         }
