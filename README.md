@@ -57,4 +57,4 @@ console.log(argv);
 [dev_deps_badge]: https://david-dm.org/vladimir-tikhonov/string-to-argv/dev-status.svg
 [dev_deps_url]: https://david-dm.org/vladimir-tikhonov/string-to-argv?type=dev
 
-[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[license_badge]: https://img.shields.io/badge/license-ISC-blue.svg
