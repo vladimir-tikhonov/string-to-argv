@@ -16,6 +16,9 @@ const insideDoubleQuotedTokenState: State = {
     onDoubleQuote() {
         return ['', StateHandle.Empty];
     },
+    onEscape() {
+        return ['', StateHandle.AfterEscapeInsideDoubleQuotedToken];
+    },
 };
 
 export default insideDoubleQuotedTokenState;

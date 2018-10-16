@@ -6,7 +6,7 @@ export interface State {
     onWhitespace: HandlerFunction;
     onDoubleQuote: HandlerFunction;
     onSingleQuote: HandlerFunction;
-    onEscapeCharacter: HandlerFunction;
+    onEscape: HandlerFunction;
 }
 
 export enum StateHandle {
@@ -14,6 +14,9 @@ export enum StateHandle {
     InsideToken,
     InsideSingleQuotedToken,
     InsideDoubleQuotedToken,
+    AfterEscapeInsideToken,
+    AfterEscapeInsideSingleQuotedToken,
+    AfterEscapeInsideDoubleQuotedToken,
 }
 
 const defaultHandler: HandlerFunction = (_character: string) => [null, null];
@@ -23,7 +26,7 @@ const baseState = {
     onWhitespace: defaultHandler,
     onDoubleQuote: defaultHandler,
     onSingleQuote: defaultHandler,
-    onEscapeCharacter: defaultHandler,
+    onEscape: defaultHandler,
 };
 
 export default baseState;

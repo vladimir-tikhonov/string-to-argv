@@ -16,6 +16,9 @@ const insideSingleQuotedTokenState: State = {
     onDoubleQuote(character: string) {
         return [character, null];
     },
+    onEscape() {
+        return ['', StateHandle.AfterEscapeInsideSingleQuotedToken];
+    },
 };
 
 export default insideSingleQuotedTokenState;

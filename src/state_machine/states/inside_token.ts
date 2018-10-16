@@ -16,6 +16,9 @@ const insiteTokenState: State = {
     onDoubleQuote() {
         return ['', StateHandle.InsideDoubleQuotedToken];
     },
+    onEscape() {
+        return ['', StateHandle.AfterEscapeInsideToken];
+    },
 };
 
 export default insiteTokenState;
